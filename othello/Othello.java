@@ -30,9 +30,17 @@ class Othello {
      * 初始化棋盤
      */
     void reset() {
-        this.board = new String[8][8];
+        board = createEmptyBoard();
+    }
+
+    /**
+     * 產生一個 8 * 8 的空棋盤
+     */
+    private String[][] createEmptyBoard() {
+        String[][] emptyBoard = new String[8][8];
         String[] row = new String[8];
         Arrays.fill(row, ".");
-        Arrays.fill(this.board, row);
+        Arrays.fill(emptyBoard, row);
+        return emptyBoard;
     }
 }
