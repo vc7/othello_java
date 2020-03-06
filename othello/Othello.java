@@ -12,8 +12,9 @@ class Othello {
      */
     @Override
     public String toString() {
-        String string = "";
+        String string = "  a b c d e f g h\n";
         for (int row = 0; row < 8; row++) {
+            string += (row + 1) + " ";
             for (int column = 0; column < 8; column++) {
                 if (column > 0) {
                     string += " ";
