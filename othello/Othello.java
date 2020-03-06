@@ -29,7 +29,7 @@ class Othello {
     /**
      * 初始化棋盤
      */
-    void initBoard() {
+    void reset() {
         this.board = new String[8][8];
         String[] row = new String[8];
         Arrays.fill(row, ".");
